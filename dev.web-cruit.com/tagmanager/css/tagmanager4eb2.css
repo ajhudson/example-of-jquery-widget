@@ -1,0 +1,275 @@
+#tagManagerContainer #cfAjaxProxyError {
+	background-color: #ff0000;
+	color: #ffffff;
+	font-weight: bold;
+	display: none;
+}
+
+#tagManagerContainer #cfAjaxProxyInfo {
+	color: #27B501;
+	font-weight: bold;
+	display: none;
+}
+
+/* TAG HIERARCHY */
+#tagManagerContainer > #tagHierarchyContainer .tagHierarchyLabel {
+	border: 1px solid #333399;
+	border-radius: 9px;
+	background-color: #D0E0F9;
+	text-align: center;
+	margin: auto;
+	font-size: 1.5em;
+	padding: 0px 5px 0px 5px;
+	display: block;
+	float: left;
+}
+
+#tagManagerContainer > #tagHierarchyContainer .tagHierarchyOptionLabel {
+	border: 1px solid #FF738A;
+	border-radius: 9px;
+	background-color: #FFC0CB;
+	text-align: center;
+	margin: auto;
+	margin: 0px 0px 10px 0px;
+	font-size: 0.9em;
+	padding: 0px 5px 0px 5px;
+	display: inline-block;
+}
+
+#tagManagerContainer > #tagHierarchyContainer > .tagHierarchyTableWrapper {
+	margin: 0% 15% 0% 15%;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table {
+	border: 1px dashed #D0E0F9;
+	border-spacing: 0px;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy tr {
+	vertical-align: top;
+	height: 40px;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy tr.hierarchyTopLevel {
+	border-top: 1px dashed #D0E0F9;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy td {
+	border: 0px;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy td input.optionButton {
+	border: 1px solid #FE7A90;
+	border-radius: 3px;
+	height: 14px;
+	background-color: #FFC0CB;
+	line-height: 10px;
+	cursor: pointer;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy table.addChildTagCategoryTable td {
+	text-align: left;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy .tagHierarchyOptionLabel .optionActionEdit {
+	display: none;
+
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy td > span.tagHierarchyArrow {
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy input.addChildTagCategoryButton {
+	background-color: #D0E0F9;
+	border: 1px solid #333399;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 26px;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy .tagHierarchyLabel > .addChildTagCategorySection {
+	display: none;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy .tagHierarchyLabel .form-error {
+	display: block;
+	width: 100px;
+	font-size: 10pt;
+	color: #ff0000;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy .tagHierarchyLabel .addChildTagCategoryFeedback,
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy .tagHierarchyLabel .addChildTagOptionFeedback {
+	display: block;
+	width: 100px;
+	font-size: 10pt;
+	color: #868A0F;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy table.optionAdministration {
+	width: 150px;
+}
+
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy input.addnewchildtagcategorybutton,
+#tagManagerContainer > #tagHierarchyContainer table.tagHierarchy input.deletechildtagcategorybutton
+{
+	width: 100%;
+}
+
+/* QUESTION IMPORTER */
+#tagManagerContainer > #tagQuestionImportContainer > .confSectionContainer,
+#tagManagerContainer > #tagQuestionImportContainer .questionContainer {
+	padding: 15px 0px 15px 0px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .questionContainer:not(:last-child) {
+	border-bottom: 1px dashed #557FC7;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .questionContainer,
+#tagManagerContainer > #tagQuestionImportContainer .questionText {
+	padding-left: 40px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .questionContainer[data-hasparentquestion='true'] {
+	padding-left: 80px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .questionContainer .arrowPrefix {
+	font-size: 1.3em;
+	color: black;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .questionTitle {
+	font-size: 1.1em;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .appSectionQuestionsContainer { 
+	display: none;
+	border: 1px dashed #557FC7;
+	margin: 1% 5% 0% 5%;
+	padding: 5px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .importButtonContainer {
+	width: 30px;
+	height: 30px;
+	border: 1px solid red;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer .optionsContainer {
+	padding-left: 80px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer input[type='button'].importQuestionButton,
+#tagManagerContainer > #tagQuestionImportContainer #importTagButtons > input {
+	cursor: pointer;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer div#importTagButtons {
+	float: right;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer div#importTagButtons .disabledText {
+	color: #777777;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer div#mergeAllOptionsWizard {
+	overflow-y: scroll;
+	height: 250px;
+}
+
+#tagManagerContainer > #tagQuestionImportContainer #wizard-background {
+	display: none;
+	position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 100;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+
+#tagManagerContainer > #tagQuestionImportContainer #wizard {
+	display: none;
+	background-color: #D0E0F9;
+	border: 1px solid blue;
+	position: fixed;
+	width: 1000px;
+	height: 550px;
+	padding: 20px;
+	top: 20%;
+	left: 50%;
+	margin: 20px 0 0 -510px;
+	z-index: 200;
+}
+
+/* MISCELLANEOUS */
+.error {
+	color: #ff0000 !important;
+}
+
+#tagManagerContainer .questionImportEvenRow {
+	background-color: #D0E0F9 !important;
+}
+
+#tagManagerContainer .questionImportOddRow {
+	background-color: #fefefe !important;
+}
+
+#tagManagerContainer .alreadyImported {
+	background-color: #fff !important;
+}
+
+#tagManagerContainer .questionImportStatus {
+	background-color: #ff0000;
+	border-radius: 6px;
+	color: #fff;
+	padding: 10px;
+	font-size: 20px;
+	width: 66%;
+	margin: 10px;
+	display: none;
+}
+
+#tagManagerContainer a.createNewImportedTagLink:hover {
+	text-decoration: none;
+}
+
+.tagHierarchyTable {
+	display: table;
+	width: 90%;
+}
+
+.tagHierarchyTable > .tagHierarchyRow {
+	display: table-row;
+}
+
+.tagHierarchyTable > .tagHierarchyRow > .tagHierarchyCell {
+	display: table-cell;
+	padding: 10px 0px 10px 0px;
+	border-bottom: 1px dotted #1CBDC7;
+	vertical-align: bottom;
+}
+
+#tagManagerContainer .wcTableCell.tagHeader > a {
+	float: right;
+}
+
+#frmAction input[type='text'],
+#frmCreateNewTagHierarchy input[type='text'] {
+	width: 40%;
+	margin-right: 6px;
+}
+
+#frmAction span.error,
+#frmCreateNewTagHierarchy span.error {
+	font-weight: bold;
+}

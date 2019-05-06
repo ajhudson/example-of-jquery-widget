@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.web-cruit.com	TRUE	/	FALSE	1999999999	CFID	208016
+.web-cruit.com	TRUE	/	FALSE	1999999999	CFTOKEN	2bf2abebe0a1f039-7D268EEB-E137-F765-4E63435DC7560F57
+

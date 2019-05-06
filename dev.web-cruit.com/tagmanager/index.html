@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from dev.web-cruit.com/tagmanager/index.cfm?action=admintag&tagid=4007 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2019 09:41:55 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head><script type="text/javascript">/* <![CDATA[ */_cf_loadingtexthtml="<img alt=' ' src='../cfscripts/scripts/ajax/resources/cf/images/loading.gif'/>";
+_cf_contextpath="";
+_cf_ajaxscriptsrc="//dev.web-cruit.com/cfscripts/scripts/ajax";
+_cf_jsonprefix='//';
+_cf_clientid='ABC7449EB3DF7556EC36FFDBAC5DBFC4';/* ]]> */</script><script type="text/javascript" src="../cfscripts/scripts/ajax/messages/cfmessage.js"></script>
+<script type="text/javascript" src="../cfscripts/scripts/ajax/package/cfajax.js"></script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_webcruitUtils=ColdFusion.AjaxProxy.init('/sharedIncludes/Remote/WebcruitGeneral/webcruitUtils.cfc','wcUtils');
+	_cf_webcruitUtils.prototype.UpdateScratchPad=function(compUserId,scratchPadText) { return ColdFusion.AjaxProxy.invoke(this, "UpdateScratchPad","60927DB49C0CCC904E", {compUserId:compUserId,scratchPadText:scratchPadText});};
+	_cf_webcruitUtils.prototype.GetScratchPadContents=function(compUserId) { return ColdFusion.AjaxProxy.invoke(this, "GetScratchPadContents","60927DB49C0CCC904E", {compUserId:compUserId});};
+	_cf_webcruitUtils.prototype.UpdateHiredSalary=function(ApplicationId,CandidateId,VacancyId,Salary,Frequency) { return ColdFusion.AjaxProxy.invoke(this, "UpdateHiredSalary","60927DB49C0CCC904E", {ApplicationId:ApplicationId,CandidateId:CandidateId,VacancyId:VacancyId,Salary:Salary,Frequency:Frequency});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_vacancyTemplates=ColdFusion.AjaxProxy.init('/sharedIncludes/Remote/WebcruitGeneral/vacancyTemplates.cfc','vacancyTemplates');
+	_cf_vacancyTemplates.prototype.getAvailableTemplates=function(companyId) { return ColdFusion.AjaxProxy.invoke(this, "getAvailableTemplates","60927DB49C0CCC904E", {companyId:companyId});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_TagManager=ColdFusion.AjaxProxy.init('/sharedIncludes/Remote/CandidateTagging/tagManager.cfc','TagManager');
+	_cf_TagManager.prototype.SetAppFormTagSettings=function(currentCompanyId,companyUserId,tagId,canShowInAppFormManager,canShowInShortlistManager) { return ColdFusion.AjaxProxy.invoke(this, "SetAppFormTagSettings","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,canShowInAppFormManager:canShowInAppFormManager,canShowInShortlistManager:canShowInShortlistManager});};
+	_cf_TagManager.prototype.DoesTagCategoryExist=function(currentCompanyId,companyUserId,tagCategoryName) { return ColdFusion.AjaxProxy.invoke(this, "DoesTagCategoryExist","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagCategoryName:tagCategoryName});};
+	_cf_TagManager.prototype.SetCanAddMoreTags=function(currentCompanyId,companyUserId,tagId,status) { return ColdFusion.AjaxProxy.invoke(this, "SetCanAddMoreTags","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,status:status});};
+	_cf_TagManager.prototype.AddMultipleNewOptions=function(currentCompanyId,companyUserId,tagId,optionsToAdd,parentId,addedViaTagAdmin) { return ColdFusion.AjaxProxy.invoke(this, "AddMultipleNewOptions","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,optionsToAdd:optionsToAdd,parentId:parentId,addedViaTagAdmin:addedViaTagAdmin});};
+	_cf_TagManager.prototype.SetTagAllowMultipleTagging=function(currentCompanyId,companyUserId,tagId,status) { return ColdFusion.AjaxProxy.invoke(this, "SetTagAllowMultipleTagging","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,status:status});};
+	_cf_TagManager.prototype.AddNewTag=function(currentCompanyId,companyUserId,tagName,parentId,addedViaTagAdmin) { return ColdFusion.AjaxProxy.invoke(this, "AddNewTag","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagName:tagName,parentId:parentId,addedViaTagAdmin:addedViaTagAdmin});};
+	_cf_TagManager.prototype.RenameOption=function(currentCompanyId,companyUserId,optionId,newOptionValue) { return ColdFusion.AjaxProxy.invoke(this, "RenameOption","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,optionId:optionId,newOptionValue:newOptionValue});};
+	_cf_TagManager.prototype.AddNewOption=function(currentCompanyId,companyUserId,tagId,optionText,parentId,addedViaTagAdmin) { return ColdFusion.AjaxProxy.invoke(this, "AddNewOption","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,optionText:optionText,parentId:parentId,addedViaTagAdmin:addedViaTagAdmin});};
+	_cf_TagManager.prototype.DeleteTagCategory=function(currentCompanyId,companyUserId,tagCategoryId) { return ColdFusion.AjaxProxy.invoke(this, "DeleteTagCategory","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagCategoryId:tagCategoryId});};
+	_cf_TagManager.prototype.SetTagSettings=function(currentCompanyId,companyUserId,tagId,canAddMoreTags,isMultiple) { return ColdFusion.AjaxProxy.invoke(this, "SetTagSettings","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,canAddMoreTags:canAddMoreTags,isMultiple:isMultiple});};
+	_cf_TagManager.prototype.DeleteOption=function(currentCompanyId,companyUserId,optionId) { return ColdFusion.AjaxProxy.invoke(this, "DeleteOption","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,optionId:optionId});};
+	_cf_TagManager.prototype.DoesTagExist=function(currentCompanyId,companyUserId,tagId,tagText) { return ColdFusion.AjaxProxy.invoke(this, "DoesTagExist","60927DB49C0CCC904E", {currentCompanyId:currentCompanyId,companyUserId:companyUserId,tagId:tagId,tagText:tagText});};
+/* ]]> */</script>
+
+<script type="text/javascript">/* <![CDATA[ */
+	var _cf_tagAdminUi=ColdFusion.AjaxProxy.init('/sharedIncludes/Remote/CandidateTagging/tagAdminUi.cfc','TagUi');
+	_cf_tagAdminUi.prototype.GetData=function(companyId,compUserId,tagId) { return ColdFusion.AjaxProxy.invoke(this, "GetData","60927DB49C0CCC904E", {companyId:companyId,compUserId:compUserId,tagId:tagId});};
+/* ]]> */</script>
+
+	<title>web-cruit dev: tag manager</title>
+		
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="Keywords" content="">
+	<meta name="Description" content="">
+	<meta name="author" content="Kaonix Solutions">
+	<meta name="Copyright" content="Kaonix Solutions Ltd">
+	<meta name="Rating" content="General">
+	<meta name="Robots" content="All">
+
+	
+	
+	<link type="text/css" rel="stylesheet" href="../images/css/web-cruit/bootstrap.min4eb2.css?20190505184942">
+
+	<link type="text/css" rel="stylesheet" href="../images/css/web-cruit/font-awesome/font-awesome-4.6.3/css/font-awesome.min4eb2.css?20190505184942">
+	<!--[if IE 7]>
+  	<link type="text/css" rel="stylesheet" href="//dev.web-cruit.com/images/css/web-cruit/font-awesome/font-awesome-ie7.min.css">
+	<![endif]-->
+
+	<link type="text/css" rel="stylesheet" href="../images/js/jquery-ui/1.8/themes/base/jquery-ui4eb2.css?20190505184942">
+	<link type="text/css" rel="stylesheet" href="index4eb2.html?20190505184942">
+
+	<link type="text/css" rel="stylesheet" href="../images/css/web-cruit/wc4eb2.css?20190505184942">
+
+	<!--[if lt IE 8]>
+    <link href="images/css/web-cruit/wc-ie7.css" rel="stylesheet">
+	<![endif]-->
+
+	<link type="text/css" rel="stylesheet" href="../images/css/web-cruit/wc-responsive-table4eb2.css?20190505184942">
+	
+	<link type="text/css" rel="stylesheet" href="../images/css/web-cruit/bootstrap-table4eb2.css?20190505184942">
+	
+	<script src="../images/js/jquery/1.12.4/jquery.min4eb2.js?20190505184942"></script>
+	<script src="../images/js/jquery-ui/1.12.0/jquery-ui.min4eb2.js?20190505184942"></script>
+	<script src="../images/css/web-cruit/bootstrap-3.3.7-dist/js/bootstrap.min4eb2.js?20190505184942" /></script>
+	<script src="../images/js/web-cruit-bootstrap-pagination/web-cruit-bootstrap-pagination4eb2.js?20190505184942"></script>
+	<script src="../images/js/web-cruit-bootstrap-modal/web-cruit-bootstrap-modal4eb2.js?20190505184942"></script>
+	<script src="../images/js/javascriptExtensions/wc-ext4eb2.js?20190505184942"></script>
+	<script src="../images/js/web-cruit-bootstrap-pagination/web-cruit-bootstrap-pagination4eb2.js?20190505184942"></script>
+	<script src="../images/js/fw1Helpers/fw1Helpers4eb2.js?20190505184942"></script>
+	<script src="../images/js/bootstrap-table4eb2.js?20190505184942"></script>
+	
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//dev.web-cruit.com/images/js/polyfills/html5shiv.min.js"></script>
+      <script src="//dev.web-cruit.com/images/js/polyfills/respond.min.js"></script>
+    <![endif]-->
+
+	<script>
+		var isIE7OrLower = false;
+	</script>
+	<!--[if lt IE 8]>
+    <script src="//dev.web-cruit.com//images/js/ie-detect/ie-detect.js"></script>
+	<![endif]-->
+	<script language="JavaScript" type="text/javascript" src="../scripts/Javascript/cfAjaxProxyHelperFunctions4eb2.js?20190505184942"></script>
+	<script language="JavaScript" type="text/javascript" src="../scripts/Javascript/web-cruit-timer/web-cruit-timer4eb2.js?20190505184942"></script> 
+
+	<!-- Using ColdFusion version 9 on ahudsone5530 -->
+  
+	<script language="JavaScript" type="text/javascript">
+	    <!--
+		function Start(page) {
+			OpenWin = this.open(page, "CtrlWindow", "toolbar=yes,menubar=no,location=no,scrollbars=yes,resizable=no,height=400,width=450");
+		}
+
+	    //function ExplorerFix() {
+		//    for (a in document.links) document.links[a].onfocus = document.links[a].blur;
+	    //}
+
+	    //if (document.all) {
+		//    document.onmousedown = ExplorerFix;
+	    //}
+	    // -->
+
+	    var isMobileView = true;
+	    var runOnMobileResize = [];
+	    var runOnDesktopResize = [];
+
+	    $(function() {
+	    	updateMobileView();
+
+	    	var compUserId = 1002;
+	    	var lin = false;
+	    	var isReady = $.isNumeric(compUserId) && lin;
+
+	    	if (isReady) {
+	    		$("#scratch-pad-area > button#save-scratch-pad").click(function() {
+					var scratchPadContents = $(this).prev().val();
+		    		var utils = new wcUtils();
+		    		utils.setAsyncMode();
+		    		utils.setCallbackHandler(updateScratchPadCallback);
+		    		utils.setErrorHandler(genericErrorHandler);
+		    		utils.UpdateScratchPad(compUserId, scratchPadContents);
+		    	});
+
+		    	getScratchPadContents(compUserId);
+	    	}
+
+			$("body").on("switchedToMobile", function(event) {
+		    	if (runOnMobileResize.length > 0) {
+		    		for (var i = 0; i < runOnMobileResize.length; i++) {
+		    			if ($.isFunction(runOnMobileResize[i])) {
+		    				runOnMobileResize[i].call();
+		    			}
+		    		}
+		    	}
+		    });
+
+			$("body").on("switchedToDesktop", function(event) {
+				if (runOnDesktopResize.length > 0) {
+		    		for (var i = 0; i < runOnDesktopResize.length; i++) {
+		    			if ($.isFunction(runOnDesktopResize[i])) {
+		    				runOnDesktopResize[i].call();
+		    			}
+		    		}
+		    	}
+			});
+
+			$(window).resize(function() {
+				updateMobileView();
+			});
+	    });
+
+    	function updateMobileView() {
+    		isMobileView = $("#mobile-menu").css("display") == "block";
+
+    		if (isMobileView) {
+    			$("body").trigger("switchedToMobile");
+    		}
+    		else {
+    			$("body").trigger("switchedToDesktop");
+    		}
+    	}
+
+	    var getScratchPadContents = function(compUserId) {
+	    	var utils = new wcUtils();
+	    	utils.setAsyncMode();
+	    	utils.setCallbackHandler(getScratchPadContentsCallback);
+	    	utils.setErrorHandler(genericErrorHandler);
+	    	utils.GetScratchPadContents(compUserId);
+	    }
+
+	    var getScratchPadContentsCallback = function(result) {
+	    	$("#scratch-pad-contents").val(result.RESULT.SCRATCHPADCONTENTS);
+	    }
+
+	    var updateScratchPadCallback = function(result) {
+	    	if (!result.SUCCESS) {
+	    		alert("Could not save notes. " + result.ERRMSG);
+	    		return;
+	    	}
+	    };
+	</script> 
+
+		<link href="../images/css/web-cruit/web-cruit_modaldialog.css" rel="stylesheet" type="text/css"></link>
+  		<script src="../scripts/Javascript/web-cruit-dialog/web-cruit-dialog.js"></script>
+  		<script type="text/javascript" src="../images/js/jquery.validate/1.14.0/jquery.validate.min4eb2.js?20190505184942"></script> 
+<script>
+$(function() {
+	topCompanyID = 0;
+	compUserID = 0;
+	protocolRelativeBaseUrl = 'http://dev.web-cruit.com/';
+});
+</script>
+<script src="../images/js/web-cruit-header-modals/web-cruit-header-modals4eb2.js?20190505184942"></script>
+
+<body bgcolor="#ffffff" leftmargin="0" topmargin="0" >
+
+<p><u>PLEASE NOTE: This is not fully functioning as the dependencies on database have been removed</u></p>
+
+<p>The purpose of this page is purely to demonstrate an example of a bespoke written jQuery widget.</p>
+
+<p><a href="tagmanagerscripts/adminTagManager4eb2.js" target="_BLANK">See jQuery widget code here</a></p>
+
+<p>
+	This widget was designed to administer and configure a hierarchy of 'tags'. These were keywords which would be applied to a candidates' profile after they have applied for a job. 
+	This enabled recruiters to search for candidates who had a tag applied to them so they could easily search for a candidate to match the requirements of a particular opening.
+</p>
+
+
+<div id="modal-dialog-webcruit"></div>
+<div class="container">
+	<table border="0" cellspacing="0" cellpadding="0" width="100%" align="center">    
+		<tr>
+			<td align="left" valign="middle" colspan="3">&nbsp;</td>
+	    </tr>
+	    <tr>
+			<td width="100%">
+				
+	
+	<script type="text/javascript">
+		$(function() {
+			var createVacancyFromTemplateModal = new WebcruitBootstrapModal("createVacancyFromTemplateModal", "Create vacancy from a template", createVacancyFromTemplateHtmlBody(), function() {
+				var selectedTemplate = createVacancyFromTemplateModalEl.find("#templateList").val();
+				var redirectUrl = document.location.protocol + "//" + document.domain + "/f1/index.cfm?action=vacancy.addfromtemplate&templateId=" + selectedTemplate;
+				window.location = redirectUrl;
+			});
+
+			var createVacancyFromTemplateModalEl = $("#createVacancyFromTemplateModal");
+
+			$("#lnkAddVacancyFromTemplate").click(function() {
+				
+				var vtCompanyId = 321;
+				
+
+				var okBtn = createVacancyFromTemplateModalEl.find("#ok-button");
+				var list = createVacancyFromTemplateModalEl.find("#templateList");
+
+				if (list.find("option").length > 0) {
+					createVacancyFromTemplateModal.show();
+					return;
+				}
+
+				var vt = new vacancyTemplates();
+				vt.setAsyncMode();
+				vt.setCallbackHandler(getAvailableTemplatesCallback);
+				vt.setErrorHandler(genericErrorHandler);
+				vt.getAvailableTemplates(vtCompanyId);
+
+				okBtn.prop("disabled", "disabled");
+				createVacancyFromTemplateModal.show();
+
+				list.change(function() {
+					var templateId = $(this).val();
+					$.isNumeric(templateId) ? okBtn.removeProp("disabled") : okBtn.prop("disabled", "disabled");
+				});
+			});
+
+			function createVacancyFromTemplateHtmlBody() {
+				return [
+					"<p>Please choose from one of the following templates:</p>",
+					"<select name=\"templateList\" id=\"templateList\" class=\"form-control\">",
+					"</select>"
+				].join("");
+			}
+
+			function getAvailableTemplatesCallback(data) {
+				var list = createVacancyFromTemplateModalEl.find("#templateList");
+
+				if (data.length > 0) {
+					$("<option value=''>Please select...</option>").appendTo(list);
+					for (var i = 0; i < data.length; i++) {
+						$("<option value='" + data[i].value + "'>" + data[i].text + "</option>").appendTo(list);
+					}
+				}
+
+			}
+		});
+	</script>
+
+			</td>
+		</tr>
+    	<tr>
+			<td valign="top" align="left">
+			<div id="web-cruit-view"> 
+	<link href="images/css/web-cruit/font-awesome/font-awesome-4.6.3/css/font-awesome4eb2.css?20190505184942" type="text/css" rel="stylesheet"></link>
+	<link href="css/tagmanager4eb2.css?20190505184942" type="text/css" rel="stylesheet"></link>
+	
+				<script language="Javascript" type="text/Javascript" src="tagmanagerscripts/objectKeysLength4eb2.js?20190505184942"></script>
+			
+				<script language="Javascript" type="text/Javascript" src="tagmanagerscripts/adminTagManager4eb2.js?20190505184942"></script>
+			
+				<script language="Javascript" type="text/Javascript" src="tagmanagerscripts/formValidationRules4eb2.js?20190505184942"></script>
+			
+				<script language="Javascript" type="text/Javascript" src="tagmanagerscripts/loadingDialogContent4eb2.js?20190505184942"></script>
+			
+				<script language="Javascript" type="text/Javascript" src="../scripts/Javascript/cfAjaxProxyHelperFunctions4eb2.js?20190505184942"></script>
+			
+			<script language="Javascript" type="text/javascript">
+				var compUserId = 1002;
+				var companyId = 321;
+			</script>	
+		
+
+<script type="text/javascript">/* <![CDATA[ */
+	ColdFusion.Ajax.importTag('CFAJAXPROXY');
+/* ]]> */</script>
+</head>
+
+
+
+
+<!--[if IE 8]><div id="detect_ie8" /><![endif]-->
+<!--[if IE 7]><div id="detect_ie7" /><![endif]-->
+<!--[if IE 6]><div id="detect_ie6" /><![endif]-->
+
+<h1>Administer Tag Hierarchy</h1>
+
+
+<div id="browserNotSupported" style="display: none;">
+	<p>Sorry, but your browser is <b>Internet Explorer version <span id="ie8" style="display: none;">8</span><span id="ie7" style="display: none;">7</span><span id="ie6" style="display: none;">6</span></b>, which is not supported here.</p> 
+	<p>To use Candidate Tagging, please use Internet Explorer 9 or later. You can also use Chrome, Firefox or Edge.</p>
+</div>
+
+<div id="tagManagerContainer"> 
+<style type="text/css">
+	
+	.tagBarrier {
+		height: 25px;
+		/*border: 1px dotted #777;*/
+	}
+
+	.categorySeperator {
+		height: 15px;
+	}
+
+	.categorySeperator.bottom {
+		border-bottom: dashed 1px red;
+	}
+
+	#tagAdmin {
+		white-space: nowrap;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		padding-bottom: 20px;
+	}
+
+	.tag {
+		border: 1px solid blue;
+		width: 275px;
+		padding: 0px 5px 0px 5px;
+		margin: 5px 5px 0px 0px;
+		background-color: #F7F7FF;
+		border: 1px solid #E1E1EB;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.wcTable.tagTable {
+		width: 100%;
+	}
+
+	.tag .tagHeader {
+		padding-top: 5px;
+	}
+
+	.tag .tagHeader,
+	.tag .btnAddOption,
+	.tag .btnDeleteOption {
+		font-size: 20px;
+	}
+
+	.tag > .optionsCaption {
+		font: bold 20px verdana;
+		margin-left: 5px;
+		color: #000;
+		padding: 10px 0px 10px 0px;
+		
+	}
+
+	.tag .nullHierarchy.parent {
+		/*border: 1px solid red;*/
+		background-image: url("images/taghierarchyarrowhoriz.png");
+		background-repeat: no-repeat;
+	}
+
+	.optionControl {
+		border: 1px solid #FFA3BF;
+		background-color: #F7C4CB;
+		margin-bottom: 5px;
+		height: 25px;
+		width: 100%;
+		text-align: right;
+	}
+
+	.optionControl.addedByUser {
+		background-color: #79D779;
+	}
+
+	.optionControl > .optionName {
+		margin-left: 5px;
+		font-size: 15px;
+		text-align: left;
+		float: left;
+	}
+
+	.optionControl > .optionIcons {
+		margin-right: 5px;
+		padding: 2px 0px 2px 0px;
+	}
+
+	@-moz-document  url-prefix() {
+		.optionControl > .optionIcons {
+			float: none !important;
+		}
+	}
+
+	.optionControl.nooptions {
+		width: 20px;
+		height: 20px;
+		border: 1px solid red;
+	}
+
+	.optionsForWrapper:not(:last-child) {
+		/* margin-bottom: 30px; */
+	}
+
+	.optionsForWrapper.nooptions {
+		/* used for jQuery reference */
+	}
+
+	.rootTagContainer {
+		border: 1px solid blue;
+		vertical-align: top;
+		margin-bottom: 20px;
+	}
+
+	.optionTagContainer {
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+
+	}
+
+	/* Please wait dialog */
+	/*
+	#loadingDialog {
+		padding-left: 20%;
+		padding-right: 20%;
+	}
+
+	#loadingDialog > #loadingDialogContainer {
+		margin-top: 10px;
+	}
+
+	#loadingDialog > #loadingDialogContainer > div {
+		height: 100%;
+		float: left;
+	}
+	*/
+
+	.pleaseWaitCaption {
+		font-family: Verdana, Arial;
+		font-size: 12pt;
+		top: 20px;
+		position: relative;
+		padding-left: 10px;
+	}
+
+	a.configureTagCategory > img,
+	a.addNewTagCategory > img,
+	a.deleteTagCategory > img,
+	a.btnDeleteOption > img,
+	a.btnAddOption > img,
+	a.addTagOption > img {
+		border: 0px;
+	}
+
+	/* jquery form validation CSS */
+	#actionDialog #addOptionTable label.error {
+		float: left;
+	}
+</style>
+
+	<script type="text/javascript" src="tagmanagerscripts/data.js"></script>
+	
+	<script type="text/javascript" language="javascript">
+	var actionDialog = new WebcruitBootstrapModal("actionDialog", "", "");
+	var loadingDialog = new WebcruitBootstrapModal("loadingDialog", "", "");
+
+	$(function() {
+		
+		var companyId = 321;
+		var compUserId = 1002;
+		var selectedTagId = 4007;
+		
+
+		loadingDialog = new WebcruitBootstrapModal("loadingPageDialog", "Tag hierarchy is being generated...", getLoadingDialogContent());
+		loadingDialog.hideAllButtons();
+		loadingDialog.show();
+
+		loadHierarchy();
+
+		function loadHierarchy() {
+			var tagui = new TagUi();
+			tagui.setAsyncMode();
+			tagui.setCallbackHandler(function (response) { getDataCallback(data); });
+			tagui.setErrorHandler(genericErrorHandler);
+			tagui.GetData(companyId, compUserId, selectedTagId);
+			
+			function getDataCallback (response) {
+				$("#tagAdmin").tagManagerAdmin({
+					companyId: companyId,
+					compUserId: compUserId,
+					onLoadData: function(isRefresh) {
+						if (isRefresh) {
+							loadHierarchy();
+						}
+						else
+							return response;
+					},
+					onLoadDataComplete: function() {
+						loadingDialog.hide();
+					}
+				});
+			}
+		}
+	});
+
+	</script>
+
+	<div id="tagAdmin"></div>
+<div id="cfAjaxProxyInfo"></div><div id="cfAjaxProxyError"></div></div> <!--- tag manager container closing tag --->			</div>
+			</td> 
+	    </tr>      	
+    </td>
+</tr>
+
+</table>
+</div>
+
+</body>
+
+
+<!-- Mirrored from dev.web-cruit.com/tagmanager/index.cfm?action=admintag&tagid=4007 by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 06 May 2019 09:42:01 GMT -->
+</html>
+
+<script type="text/javascript" language="javascript">
+	var ieVersion = 0;
+
+	if ($("#detect_ie8").length > 0) {
+		ieVersion = 8;
+	} else if ($("#detect_ie7").length > 0) {
+		ieVersion = 7;
+	} else if ($("#detect_ie6").length > 0) {
+		ieVersion = 6;
+	}
+
+	if (ieVersion > 0) {
+		$("#tagManagerContainer").hide();
+		$("#browserNotSupported #ie" + ieVersion).show();
+		$("#browserNotSupported").show();
+	}
+</script> 

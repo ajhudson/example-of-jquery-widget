@@ -1,0 +1,390 @@
+nav .navbar-brand {
+	font-size: 36px;
+	font-family: "Century Gothic", Arial;
+}
+
+nav .navbar-brand .navbar-brand-light {
+	color: #38c5ce;
+}
+
+input[type='text']:not([class]),
+input[type='password']:not([class]),
+select.categorylist {
+	margin: 0px 3px 3px 0px;
+	padding: 0 5px 0 0;
+}
+
+
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 4px 4px 4px;
+}
+
+.form-horizontal .control-label {
+    text-align: left;
+}
+
+a.wc-link {
+	text-decoration: underline;
+}
+
+#web-cruit-bootstrap-menu > ul.navbar-nav > li > a.wc-link {
+	text-decoration: underline;
+}
+
+/* jQueryValidation */
+form label.error {
+	color: #ff0000;
+}
+
+/* web-cruit vacancy status colour guide */
+#web-cruit-view .adminleft  {
+  height : 20;
+	text-align : left;
+	font-family : Calibri, Tahoma, verdana, arial, sans-serif;
+	font-size : 11pt;
+	font-style : normal;
+	font-weight : normal;
+	color : #333399;
+}
+
+#web-cruit-view .alerttable  {
+	font-weight : bold;
+	font-size : 11pt;
+	font-family : Calibri, Tahoma, verdana, arial, sans-serif;
+	font-style : normal;
+	text-align : left;
+	background-color : #ddffff;
+}
+
+#web-cruit-view  .activetable  {
+	font-size : 12pt;
+	font-family : Calibri, Tahoma, verdana, arial, sans-serif;
+	font-style : normal;
+	background-color : #009900;
+	color : White;
+}
+
+#web-cruit-view .inactivetable  {
+	font-size : 12pt;
+	font-style : normal;
+	background-color : #FF6600;
+	color : #fff;
+}
+
+#web-cruit-view .partialtable  {
+	font-size : 12pt;
+	font-style : normal;
+	background-color : #FFCC00;
+	color : #fff;
+}
+
+#web-cruit-view .deletedtable  {
+	font-size : 11pt;
+	font-style : normal;
+	background-color : #FF0000;
+	color : #fff;
+}
+
+#web-cruit-view .errorp {
+	background-color: #ff0000;
+	color: #fff;
+	padding: 6px;
+	border-radius: 6px;
+}
+
+#web-cruit-view .wcalert,
+#web-cruit-view .redp,
+#web-cruit-view .smallredbold,
+#web-cruit-view .required,
+.modal-dialog .redp { 
+	color: #ff0000; 
+	font-weight: bold; 
+}
+
+#web-cruit-view .warning {
+	color: #ff7700;
+	font-weight: bold;
+}
+
+#web-cruit-view .largeredbold {
+	color: #ff0000; 
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+#web-cruit-view td.headernowidth {
+	font-weight : bold;	
+	color : #0D0279;
+}
+
+#web-cruit-view td.header {
+	font-weight : bold;	
+	color : #0D0279;
+	width: 30%;
+}
+
+#web-cruit-view .greenp,
+.modal-dialog .greenp {
+	color: green; font-weight: bold;
+}
+
+#web-cruit-view a.vacancydate  {
+	color : #ffffff;
+	font-weight : normal;
+	font-size : 11pt;
+	vertical-align : middle;
+}
+
+#web-cruit-view a.vacancydate:visited  {
+	color : #ffffff;
+	background-color : transparent;
+	font-weight : normal;
+	font-size : 11pt;
+	vertical-align : middle;
+}
+
+#web-cruit-view a.vacancydate:active {
+	color : #ffffff;
+	font-weight : normal;
+	font-size : 11pt;	
+	vertical-align : middle;	
+}
+
+#web-cruit-view a.vacancydate:hover  {
+	color : #ffffff;
+	font-weight : normal;
+	font-size : 11pt;
+	vertical-align : middle;
+	font-weight: bold;
+}
+
+#web-cruit-view .partialtable,
+#web-cruit-view .partialtable > a {
+	color: #ff0000 !important;
+}
+
+#web-cruit-view .activetable > a,
+#web-cruit-view .inactivetable > a,
+#web-cruit-view .partialtable > a,
+#web-cruit-view .deletedtable > a {
+	font-weight: bold;
+}
+
+#web-cruit-view hr.wc-seperator {
+	border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(51, 122, 183, 0), rgba(51, 122, 183, 0.75), rgba(51, 122, 183, 0));
+}
+
+#web-cruit-view .wc-align-center {
+	text-align: center;
+}
+
+#web-cruit-view .label.label-primary {
+	background-color: #38c5ce;
+}
+
+#web-cruit-view .label.label-default {
+	background-color: #333399;
+}
+
+#web-cruit-view .label.label-info {
+	background-color: #5bc0de;
+}
+
+#web-cruit-view .label.label-success {
+	background-color: #5cb85c;
+}
+
+#web-cruit-view .label.label-danger {
+	background-color: #d9534f;
+}
+
+#web-cruit-view .wcTable,
+.webcruit-bootstrap-modal .wcTable {
+	display: table;
+}
+
+#web-cruit-view .captionCell {
+	width: 80px;
+}
+
+#web-cruit-view .wcTableRow,
+.webcruit-bootstrap-modal .wcTableRow {
+	display: table-row;
+}
+
+#web-cruit-view .wcTableCell,
+.webcruit-bootstrap-modal .wcTableCell {
+	display: table-cell;
+	padding-right: 5px;
+}
+
+#web-cruit-view .wcTableCellSeperator,
+.webcruit-bootstrap-modal .wcTableCellSeperator {
+	border-bottom: 1px solid #1CBDC7;
+}
+
+#web-cruit-view .wcNone,
+.webcruit-bootstrap-modal .wcNone {
+	display: none;
+} 
+
+#web-cruit-view #searchCandidateTagsUiCompactContainer .dropDownContainer {
+	text-align: left;
+}
+
+#web-cruit-view #searchCandidateTagsUiCompactContainer .dropDownCaption { 
+	text-align: left;
+	font-weight: bold;
+}
+
+#web-cruit-view #searchCandidateTagsUiCompactContainer select[multiple='multiple'] {
+	width: 300px;
+}
+
+#web-cruit-view #searchCandidateTagsUiCompactContainer .dropDownContainer .removeFromTagSearch {
+	display: block;
+	margin-top: 3px;
+}
+
+#web-cruit-view .fadedImage {
+	opacity: 0.4;
+  	filter: alpha(opacity=40);
+   	zoom: 1;  	
+}
+
+#web-cruit-view .greyedText {
+	color: gray;
+}
+
+#web-cruit-view .errorAlert {
+	background-color: #ff0000;
+	color: #fff;
+	padding: 3px;
+	border-radius: 9px;
+}
+
+#agencymanager .separator  {
+	font-size: 8pt;
+	color: #ffffff;
+	font-weight: normal;
+	vertical-align: middle;	
+}
+
+#agencymanager .topheader {
+	color: #ffffff;
+	font-weight: normal;
+	vertical-align: middle;	
+}
+
+/* fix the spacer at the top of tables */
+#web-cruit-view td:not([bgcolor]) > img[src='images/spacer.gif'] { display: none; }
+
+#web-cruit-view td[bgcolor='#557fc7'], 
+#web-cruit-view td[bgcolor='#3333cc'],
+#web-cruit-view tr[bgcolor='#557fc7']
+{ 
+	height: 0px; padding: 0; margin: 0; line-height: 0; vertical-align: top; background-color: transparent; 
+}
+
+#web-cruit-view td > img[src='images/spacer.gif'] { height: 3px; width: 100%; background-image: url("../../hr_line.gif"); background-repeat: repeat-x; }
+
+#web-cruit-view .thinDiv { border: 0; background-color: #1CBDC7; color: #1CBDC7; height: 1px; margin-bottom: 12px; }
+
+#web-cruit-view .applicantManagerTags {
+	margin: 3px;
+	padding: 3px;
+	background-color: transparent;
+	border: 0px;
+}
+
+/* override dialog css */
+div.ui-dialog > div.ui-dialog-titlebar,
+div.modal-dialog > div.modal-content > div.modal-header {
+	margin: 3px;
+}
+
+div.ui-dialog > div.ui-dialog-titlebar > span.ui-dialog-title,
+div.modal-dialog > div.modal-content > div.modal-header > .modal-title {
+	font-family: Verdana, Arial;
+	font-size: 13pt;
+	color: #fff;
+}
+
+
+
+/* boostrap fix for removing top margin of pagenation control to align with other elements in the same row of the grid system */
+ul.pagination.wc-pull-up {
+	margin-top: 0px !important;
+}
+
+/* bootstrap fix for modal popups showing behind the translucent overlay background */
+.modal-backdrop {
+	z-index: 100 !important;
+}
+
+
+.btn-info, .btn-default, .btn-primary {
+	color: #66c;
+	text-shadow: none;
+}
+
+#web-cruit-view select[disabled], 
+#web-cruit-view input[type='text'][disabled], 
+#web-cruit-view input[type='email'][disabled],
+#web-cruit-view textarea[disabled],
+#web-cruit-view input[type='checkbox'][disabled] {
+
+	background-color: #cdcdcd;
+	color: #777;
+}
+
+#web-cruit-view input[type='text'][readonly],
+#web-cruit-view input[type='email'][readonly],
+#web-cruit-view input[type='checkbox'][readonly],
+#web-cruit-view textarea[readonly],
+#web-cruit-view select[readonly] {
+	background-color: #cdcdcd;
+	color: #777;
+}
+
+/* override dialog css */
+div.ui-dialog > div.ui-dialog-titlebar,
+div.modal-dialog > div.modal-content > div.modal-header {
+	border-radius: 6px;
+	background-color: #339;
+	margin: 3px;
+}
+
+div.ui-dialog > div.ui-dialog-titlebar > span.ui-dialog-title,
+div.modal-dialog > div.modal-content > div.modal-header > .modal-title {
+	font-family: Verdana, Arial;
+	font-size: 13pt;
+	color: #fff;
+}
+
+/* bootstrap fix for modal popups showing behind the translucent overlay background */
+.modal-backdrop {
+	z-index: 100 !important;
+}
+
+.modal-dialog .modal-footer {
+	margin-top: 9px;
+}
+
+/* fix for jquery datepicker */
+.ui-datepicker {
+	z-index: 999999 !important;
+}}
+
+.scrollableContainer { border:1px solid #3333cc; width:450px; height: 100px; overflow-y: scroll; }
+
+/* fix for default panel to change white text to grey */
+.panel-primary > .panel-heading { color: 767676; }
+
+.chosen-container .search-field input {
+width: 100% !important;
+}
+
